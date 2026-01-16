@@ -27,7 +27,7 @@ const Hero: React.FC<{ isBigText: boolean }> = ({ isBigText }) => {
             <div className="relative z-10 w-full flex flex-col justify-center h-full pt-16 md:pt-28 pb-12">
               <div className="w-full md:w-3/5 space-y-8">
                 <h1 className={`${isBigText ? 'text-5xl md:text-7xl' : 'text-4xl md:text-[64px]'} font-bold text-gray-900 leading-[1.1] tracking-tight`}>
-                  당신의 일상을 지키는<br />
+                  당신의 건강을 지키는<br />
                   <span className="text-nh-green">든든한 파트너</span><br />
                   NH농협손해보험
                 </h1>
