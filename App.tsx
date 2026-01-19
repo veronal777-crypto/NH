@@ -22,7 +22,7 @@ const App: React.FC = () => {
 
         {/* 2. MZ & ESG Content Section */}
         <section className="py-20 bg-white">
-          <div className="max-w-[1280px] mx-auto px-[40px]">
+          <div className="max-w-[1280px] mx-auto">
             <div className="flex flex-col md:flex-row items-center gap-16 overflow-hidden group/container">
               <div className="relative group/container cursor-pointer overflow-hidden rounded-[32px] w-full md:w-[calc(50%+80px)]">
                 <img
@@ -38,16 +38,7 @@ const App: React.FC = () => {
                 <p className={`${isBigText ? 'text-xl' : 'text-lg'} text-gray-600 font-medium leading-relaxed`}>
                   농협손해보험은 단순한 보험을 넘어 농촌의 발전과 고객의 삶의 질 향상을 위한 혁신적인 디지털 보험 서비스를 실천합니다.
                 </p>
-                <div className="grid grid-cols-2 gap-4 pt-2">
-                  <div className="p-6 rounded-[24px] group hover:bg-nh-green transition-all cursor-default">
-                    <div className="font-black text-2xl mb-1 text-nh-green group-hover:text-white transition-colors">98%</div>
-                    <div className="text-xs font-bold text-gray-500 group-hover:text-white/80 transition-colors">농업인 가입 만족도</div>
-                  </div>
-                  <div className="p-6 rounded-[24px] group hover:bg-nh-green transition-all cursor-default">
-                    <div className="font-black text-2xl mb-1 text-nh-green group-hover:text-white transition-colors">2.4조</div>
-                    <div className="text-xs font-bold text-gray-500 group-hover:text-white/80 transition-colors">사회공헌 기여 금액</div>
-                  </div>
-                </div>
+
                 <button className="flex items-center space-x-3 font-bold text-nh-green text-lg hover:translate-x-3 hover:brightness-110 active:translate-x-1 transition-all">
                   <span>우리의 지속가능한 이야기 보기</span>
                   <i className="fa-solid fa-arrow-right-long"></i>
