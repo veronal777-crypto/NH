@@ -34,7 +34,7 @@ const FeatureGrid: React.FC<{ isBigText: boolean }> = ({ isBigText }) => {
                   <div
                     key={service.title}
                     className={`
-                      bg-[#1F2937] p-6 rounded-[24px] border border-gray-800 hover:border-[#eeeeee] hover:bg-[#252f3f] transition-all cursor-pointer group flex flex-col justify-between h-[180px]
+                      bg-[#1F2937] p-6 rounded-[24px] border border-gray-800 hover:border-[#9ca3af] hover:bg-[#252f3f] transition-all cursor-pointer group flex flex-col justify-between h-[180px]
                       ${service.size === 'large' ? 'md:col-span-2' : 'md:col-span-1'}
                     `}
                   >
