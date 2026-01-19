@@ -22,7 +22,7 @@ const App: React.FC = () => {
 
         {/* 2. MZ & ESG Content Section */}
         <section className="py-20 bg-white">
-          <div className="max-w-[1360px] mx-auto px-[40px]">
+          <div className="max-w-[1280px] mx-auto px-[40px]">
             <div className="flex flex-col md:flex-row items-center gap-16 overflow-hidden group/container">
               <div className="relative group/container cursor-pointer overflow-hidden rounded-[32px] w-full md:w-[calc(50%+80px)]">
                 <img

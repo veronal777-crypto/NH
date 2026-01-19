@@ -64,17 +64,17 @@ const Hero: React.FC<{ isBigText: boolean }> = ({ isBigText }) => {
                   </div>
 
                   <div className="flex-1 md:flex-none">
-                    <div className="relative inline-block">
-                      <span className={`block font-bold ${isBigText ? 'text-2xl' : 'text-xl'} text-gray-800 group-hover:text-nh-green transition-colors`}>
+                    <div className="relative inline-block mb-1">
+                      <span className={`block font-bold ${isBigText ? 'text-2xl' : 'text-xl'} text-gray-800 transition-colors`}>
                         {item.title}
                       </span>
-                      <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-nh-green transition-all duration-300 group-hover:w-full"></span>
                     </div>
-                    <span className="block text-sm text-gray-400 font-medium mt-1 group-hover:text-gray-500 transition-colors">바로가기</span>
-                  </div>
-
-                  <div className="w-10 h-10 rounded-full flex items-center justify-center md:ml-auto group-hover:bg-nh-green group-hover:rotate-90 transition-all">
-                    <i className="fa-solid fa-arrow-right text-gray-400 group-hover:text-white text-xs"></i>
+                    <div className="flex items-center space-x-2 group/shortcut">
+                      <span className="text-sm text-gray-400 font-bold group-hover:text-gray-600 transition-colors">바로가기</span>
+                      <div className="w-6 h-6 rounded-full bg-gray-100 flex items-center justify-center transition-all duration-300 group-hover:bg-nh-green group-hover:scale-110">
+                        <i className="fa-solid fa-arrow-right text-gray-400 group-hover:text-white text-[10px]"></i>
+                      </div>
+                    </div>
                   </div>
                 </a>
               ))}

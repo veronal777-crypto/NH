@@ -5,7 +5,7 @@ import { LATEST_NEWS } from '../constants';
 const NewsSection: React.FC<{ isBigText: boolean }> = ({ isBigText }) => {
   return (
     <section className="py-20 bg-white">
-      <div className="max-w-[1360px] mx-auto px-6 md:px-8">
+      <div className="max-w-[1280px] mx-auto px-6 md:px-8">
         <div className="flex justify-between items-end mb-16">
           <div className="space-y-4">
             <h2 className={`${isBigText ? 'text-5xl' : 'text-4xl'} font-black tracking-tight`}>

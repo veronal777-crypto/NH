@@ -10,7 +10,7 @@ const FeatureGrid: React.FC<{ isBigText: boolean }> = ({ isBigText }) => {
         {/* Dark Background Container with 32px radius */}
         <div className="bg-[#111827] text-white overflow-hidden rounded-[32px] py-20 md:py-28 px-6 md:px-10">
           {/* Centered Content Container at 1360px */}
-          <div className="max-w-[1360px] mx-auto">
+          <div className="max-w-[1280px] mx-auto">
             <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-start">
               {/* Left Heading Section */}
               <div className="lg:w-2/5 space-y-8">
