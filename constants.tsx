@@ -4,6 +4,10 @@ import { NavItem, ServiceCard, NewsItem } from './types';
 import newsTrophyImg from './assets/images/news_trophy.png';
 import newsAppleFarmImg from './assets/images/news_apple_farm.png';
 import newsEventBoxImg from './assets/images/news_event_box.png';
+import iconContractImg from './assets/images/file.svg';
+import iconPaymentImg from './assets/images/creditcard.svg';
+import iconClaimImg from './assets/images/money.svg';
+import iconLoanImg from './assets/images/certificate.svg';
 
 export const COLORS = {
   primary: '#1457a2', // Updated from NH Green to requested Blue
@@ -28,11 +32,11 @@ export const SUB_NAV_ITEMS: NavItem[] = [
   { label: '고객센터', href: '#' },
 ];
 
-export const TOP_SERVICES: ServiceCard[] = [
-  { id: 1, title: '보험계약조회', icon: 'fa-file-contract', color: 'bg-blue-50' },
-  { id: 2, title: '보험료납입', icon: 'fa-credit-card', color: 'bg-green-50' },
-  { id: 3, title: '보험금청구', icon: 'fa-file-invoice-dollar', color: 'bg-red-50' },
-  { id: 4, title: '보험계약대출', icon: 'fa-hand-holding-dollar', color: 'bg-yellow-50' },
+export const TOP_SERVICES: (ServiceCard & { image?: string })[] = [
+  { id: 1, title: '보험계약조회', icon: 'fa-file-contract', color: 'bg-blue-50', image: iconContractImg },
+  { id: 2, title: '보험료납입', icon: 'fa-credit-card', color: 'bg-green-50', image: iconPaymentImg },
+  { id: 3, title: '보험금청구', icon: 'fa-file-invoice-dollar', color: 'bg-red-50', image: iconClaimImg },
+  { id: 4, title: '보험계약대출', icon: 'fa-hand-holding-dollar', color: 'bg-yellow-50', image: iconLoanImg },
   { id: 5, title: '증명서발급', icon: 'fa-certificate', color: 'bg-purple-50' },
 ];
 

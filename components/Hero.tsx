@@ -52,15 +52,19 @@ const Hero: React.FC<{ isBigText: boolean }> = ({ isBigText }) => {
 
           {/* Grouped Service Area */}
           <div className="relative z-20 w-full px-12 pb-12 mt-auto">
-            <div className="bg-transparent p-10 flex flex-col md:flex-row items-center justify-between gap-6 transition-all">
+            <div className="bg-white/30 rounded-[16px] h-[128px] px-10 flex flex-col md:flex-row items-center justify-between gap-6 transition-all">
               {TOP_SERVICES.map((item) => (
                 <a
                   key={item.id}
                   href="#"
-                  className="flex-1 w-full group flex items-center justify-between md:justify-start md:space-x-8 p-6 transition-all"
+                  className="flex-1 w-full group flex items-center justify-between md:justify-start md:gap-4 p-6 transition-all"
                 >
-                  <div className="w-16 h-16 rounded-2xl bg-white/50 flex items-center justify-center transition-all duration-300">
-                    <i className={`fa-solid ${item.icon} text-2xl text-nh-green`}></i>
+                  <div className="w-16 h-16 rounded-2xl flex items-center justify-center transition-all duration-300">
+                    {(item as any).image ? (
+                      <img src={(item as any).image} alt={item.title} className="w-[40px] h-[40px] object-contain" />
+                    ) : (
+                      <i className={`fa-solid ${item.icon} text-2xl text-nh-green`}></i>
+                    )}
                   </div>
 
                   <div className="flex-1 md:flex-none">
@@ -70,7 +74,7 @@ const Hero: React.FC<{ isBigText: boolean }> = ({ isBigText }) => {
                       </span>
                     </div>
                     <div className="flex items-center space-x-2 group/shortcut">
-                      <span className="text-sm text-gray-400 font-bold group-hover:text-gray-600 transition-colors">바로가기</span>
+                      <span className="text-sm text-[#555555] group-hover:text-gray-600 transition-colors">바로가기</span>
                       <div className="w-6 h-6 rounded-full bg-gray-100 flex items-center justify-center transition-all duration-300 group-hover:bg-nh-green group-hover:scale-110">
                         <i className="fa-solid fa-arrow-right text-gray-400 group-hover:text-white text-[10px]"></i>
                       </div>

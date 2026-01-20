@@ -40,7 +40,7 @@ const NewsSection: React.FC<{ isBigText: boolean }> = ({ isBigText }) => {
                   {news.excerpt}
                 </p>
                 <div className="flex items-center space-x-2">
-                  <span className="text-sm font-bold text-gray-400 group-hover:text-gray-600 transition-colors">{news.date}</span>
+                  <span className="text-sm font-normal text-gray-400 group-hover:text-gray-600 transition-colors">{news.date}</span>
                 </div>
               </div>
             </div>

@@ -56,8 +56,8 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="font-bold text-gray-900 mb-6 text-lg">고객센터</h4>
             <div className="space-y-4 group cursor-pointer">
-              <div className="text-2xl font-black text-nh-green group-hover:scale-105 transition-transform origin-left">1544-0000</div>
-              <p className="text-xs text-gray-400 font-bold leading-relaxed">
+              <div className="text-2xl font-bold text-nh-green group-hover:scale-105 transition-transform origin-left">1544-0000</div>
+              <p className="text-xs text-gray-400 font-normal leading-relaxed">
                 평일 09:00 ~ 18:00<br />
                 (주말/공휴일 휴무)
               </p>
@@ -66,13 +66,13 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="pt-12 border-t border-[#e5e5e5] flex flex-col md:flex-row justify-between items-center gap-6">
-          <div className="flex flex-wrap justify-center md:justify-start gap-8 text-sm font-bold text-gray-400">
+          <div className="flex flex-wrap justify-center md:justify-start gap-8 text-sm font-normal text-gray-400">
             <a href="#" className="text-gray-900 hover:text-nh-green transition-colors">개인정보처리방침</a>
             <a href="#" className="hover:text-gray-900 transition-colors">이용약관</a>
             <a href="#" className="hover:text-gray-900 transition-colors">신용정보활용체제</a>
             <a href="#" className="hover:text-gray-900 transition-colors">전자금융거래표준약관</a>
           </div>
-          <div className="text-sm text-gray-400 font-medium">
+          <div className="text-sm text-gray-400 font-normal">
             © 2025 NH NongHyup Non-life Insurance. All rights reserved.
           </div>
         </div>
