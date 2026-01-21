@@ -8,23 +8,23 @@ const Hero: React.FC<{ isBigText: boolean }> = ({ isBigText }) => {
     <section className="pt-[72px] md:pt-[104px] pb-20 bg-white">
       <div className="max-w-[1920px] mx-auto px-[40px]">
         {/* Main Banner Wrapper */}
-        <div className="relative rounded-[32px] overflow-hidden bg-[#f1f5f8] min-h-[760px] flex flex-col transition-all duration-500">
+        <div className="relative rounded-[32px] overflow-hidden bg-[#f1f5f8] min-h-[760px] flex flex-col transition-all duration-500 px-[40px]">
           {/* Decorative Background Elements */}
           <div className="absolute top-0 right-0 w-1/2 h-full pointer-events-none overflow-hidden">
             <div className="absolute top-[-10%] right-[-10%] w-[600px] h-[600px] bg-nh-green/10 rounded-full blur-[100px]"></div>
             <div className="absolute bottom-[-20%] right-[10%] w-[400px] h-[400px] bg-nh-yellow/20 rounded-full blur-[80px]"></div>
           </div>
 
-          {/* Wang-gu Image (Moved to background layer) */}
-          <div className="absolute bottom-0 right-[180px] h-full w-2/3 md:w-1/2 z-0 pointer-events-none flex items-end justify-end">
-            <img src={wangguImg} alt="NH NongHyup Wang-gu Character" className="h-full object-contain drop-shadow-2xl opacity-90 scale-95" />
-          </div>
+          {/* 1280px Content Constraint Container */}
+          <div className="relative w-full max-w-[1280px] mx-auto flex-1 flex flex-col px-6 md:px-0">
 
-          {/* Content Container (Padding 160px) */}
-          <div className="relative w-full h-full px-8 md:px-[160px]">
+            {/* Wang-gu Image (Moved inside 1280px container, positioned right-0) */}
+            <div className="absolute bottom-0 right-0 h-full w-2/3 md:w-[60%] z-0 pointer-events-none flex items-center justify-end">
+              <img src={wangguImg} alt="NH NongHyup Wang-gu Character" className="w-[705px] object-contain drop-shadow-2xl opacity-90 translate-y-[80px]" />
+            </div>
 
             {/* Text Content */}
-            <div className="relative z-10 w-full flex flex-col justify-center h-full pt-16 md:pt-28 pb-12">
+            <div className="relative z-10 w-full flex-1 flex flex-col justify-center pt-8 md:pt-20 pb-8">
               <div className="w-full md:w-3/5 space-y-8">
                 <h1 className={`${isBigText ? 'text-5xl md:text-7xl' : 'text-4xl md:text-[64px]'} font-bold text-gray-900 leading-[1.1] tracking-tight`}>
                   당신의 건강을 지키는<br />
@@ -51,8 +51,8 @@ const Hero: React.FC<{ isBigText: boolean }> = ({ isBigText }) => {
           </div>
 
           {/* Grouped Service Area */}
-          <div className="relative z-20 w-full px-12 pb-12 mt-auto">
-            <div className="bg-white/30 rounded-[16px] h-[128px] px-10 flex flex-col md:flex-row items-center justify-between gap-6 transition-all">
+          <div className="relative z-20 w-full pb-12 mt-auto">
+            <div className="w-full bg-white/30 rounded-[16px] h-[128px] flex flex-col md:flex-row items-center justify-between gap-6 transition-all">
               {TOP_SERVICES.map((item) => (
                 <a
                   key={item.id}

@@ -6,7 +6,7 @@ import newsAppleFarmImg from './assets/images/news_apple_farm.png';
 import newsEventBoxImg from './assets/images/news_event_box.png';
 import iconContractImg from './assets/images/file.svg';
 import iconPaymentImg from './assets/images/creditcard.svg';
-import iconClaimImg from './assets/images/money.svg';
+import iconClaimImg from './assets/images/receipt.svg';
 import iconLoanImg from './assets/images/money.svg';
 import iconCertificateImg from './assets/images/certificate.svg';
 
