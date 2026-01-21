@@ -26,7 +26,7 @@ const Header: React.FC<HeaderProps> = ({ isBigText, toggleBigText }) => {
           </div>
 
           {/* Main Desktop Nav - Adjusted to left align */}
-          <nav className="hidden md:flex space-x-12 ml-20">
+          <nav className="hidden md:flex space-x-12 ml-16">
             {NAV_ITEMS.map((item) => (
               <a
                 key={item.label}
